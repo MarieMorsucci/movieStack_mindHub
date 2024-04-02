@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="movies, cinema, moviestack">
+    <meta name="description" content="The best movies are here in Moviestack">
+    <link rel="shortcut icon" href="../assets/Moviestack_isotipo.png" type="image/x-icon">
+    <meta name="author" content="Mariela Morsucci">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Movies</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="h-screen w-screen flex flex-wrap content-between box-border">
+
+    <header class="h-1/6 w-full flex flex-wrap justify-between content-center p-4 bg-gray-800">
+
+        <div class="w-1/5 flex ">
+            <img class="w-[200px] " src="../assets/Moviestack_isotipo.png" alt="logo Moviestack">
+            <img class=" w-full" src="../assets/Moviestack_logotipo1.png" alt="logotipo">
+        </div>
+
+        <nav class=" w-3/5  flex flex-wrap justify-around content-center p-7 text-white md:max-h-1/6">
+            <a class="px-4 py-3 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 " href="./index.html">HOME</a>
+            <a class="px-4 py-3 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 bg-indigo-400" href="#">MOVIES</a>
+            <a class="px-4 py-3 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 " href="#">FAVS</a>
+            
+        </nav>
+
+    </header>
+
+    <main class=" w-full flex flex-wrap  ">
+
+        <div class=" w-full">
+            <h1 class="exo-font h-[100px] text-center text-5xl font-bold bg-indigo-200 p-5 ">
+                MOVIES
+            </h1>
+        </div>
+
+        <div id="movieContent" class="">
+
+          
+        </div>
+
+
+
+    </main>
+
+    <footer class="h-1/6 w-full bg-gray-800 text-white flex flex-wrap justify-center content-center text-center">
+        <div>
+            <p>MINDHUB &reg; COHORT 54 </p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
