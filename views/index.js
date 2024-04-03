@@ -10,6 +10,7 @@ let createCard = (
 <h6 class="w-full font-bold">${obj.title}</h6>
 <p class="w-full">${obj.tagline}</p>
 <P class="w-full p-1 italic">${obj.overview.slice(0, 90)}</P>
+<a class="justify-items-end font-medium text-blue-600 dark:text-blue-500 hover:underline " href="#">Ver mas..</a>
 </article>`;
 
 //RENDERIZACION DE LAS CARTAS
@@ -23,3 +24,5 @@ let movieConteiner = document.getElementById("movieContent");
 
 movieConteiner.className = "flex flex-wrap justify-around gap-6 p-6";
 movieConteiner.innerHTML = renderCard(data, template);
+
+
