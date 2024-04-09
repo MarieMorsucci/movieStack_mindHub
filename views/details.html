@@ -32,7 +32,7 @@
             <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 "
                 href="./index.html">HOME</a>
             <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 bg-indigo-400"
-                href="#">MOVIES</a>
+                href="./movies.html">MOVIES</a>
             <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 "
                 href="#">FAVS</a>
 
@@ -40,36 +40,13 @@
 
     </header>
 
+    <main class=" flex flex-wrap content-between gap-8 ">
 
-    <main class=" w-full flex flex-wrap bg-gray-200 ">
-
-        <div class=" w-full">
-            <h1 class="exo-font h-[100px] text-center text-5xl font-bold bg-indigo-200 p-5 ">
-                MOVIES
-            </h1>
-        </div>
-        <div class="filtersMovies h-[50px] w-full bg-indigo-400 flex justify-around">
-
-            <form class="w-full flex justify-around p-2">
-
-                <select id="selectedGenre" class="w-2/5" name="selectedGenre" autofocus="loadMessage" >
-                    <option selected disabled  value="">Choose a genre</option>
-                    <option value="">All</option>
-
-                </select>
-                <label class="w-2/5">
-                    <input  id="nameSearch" placeholder="Search per name.." class="h-[35px] w-4/5 p-2" type="text">
-                </label>
-
-
-            </form>
+        <div id="detailMovie" class=" ">
 
 
         </div>
 
-        <div id="movieContent" class=" ">
-
-        </div>
 
 
 
@@ -83,12 +60,9 @@
     </footer>
 
 
-    
-    <script src="./data.js"></script>
-    <script type="module" src="./movie.js"></script>
 
-    <!-- Este script esta ligado al script de funcionamiento del html -->
-    
+    <script src="./data.js"></script>
+    <script type="module" src="./detail.js"></script>
 </body>
 
 </html>
