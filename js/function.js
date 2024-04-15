@@ -19,7 +19,7 @@ export let filterName = (array, value) => {
 
 //Funcion de Creacion de Cartas
 export let createCard = (obj, arrayLike) =>
-  `<article class="h-[350px] w-3/5 md:w-3/12 flex flex-column flex-wrap content-between justify-center text-center bg-indigo-300 bg-opacity-25 align-middle p-2 rounded-2xl shadow-[5px_5px_0px_0px_rgba(109,40,217)]">
+  `<article class="h-[350px] w-[460px] flex flex-column flex-wrap content-around justify-center text-center bg-indigo-300 bg-opacity-25 align-middle p-2 rounded-2xl shadow-[5px_5px_0px_0px_rgba(109,40,217)]">
     
 ${
   arrayLike.includes(obj.id)
@@ -72,7 +72,7 @@ export let createOption = (e) => `<option value="${e}">${e}</option>`;
 //CREATE MOVIE DETAILS
 export let createMovieDetails = (obj) =>
   `<div class="detailsPrincipal w-full flex flex-wrap bg-indigo-400 bg-opacity-25 justify-around">
-    <img class="h-[200px] w-4/6 md:w-1/3 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]" src= 'https://moviestack.onrender.com/static/${
+    <img class="h-full w-4/6 md:w-1/3 object-cover shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]" src= 'https://moviestack.onrender.com/static/${
       obj.image
     }' alt="${obj.title}">
     <div class=" w-3/4 pt-5 pb-6 flex flex-column flex-wrap md:w-2/4">

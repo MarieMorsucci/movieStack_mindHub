@@ -119,11 +119,4 @@ movieConteiner.addEventListener('click', (event)=>{
 })
     
 
-
-
-
-
-
-
-
 });
