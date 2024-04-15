@@ -5,3 +5,68 @@
   font-weight: 20;
   font-style: normal;
 }
+
+.con-like {
+  --red: rgb(150, 184, 18);
+  position: absolute;
+  top:0
+  left:0
+  display: flex;
+  justify-items: end;
+}
+
+.con-like .like {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+
+
+}
+
+.con-like .checkmark {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.con-like .outline,
+.con-like .filled {
+  
+  position: absolute;
+}
+
+.con-like .filled {
+  animation: kfr-filled 0.5s;
+  stroke: var(--red);
+  fill: var(--red);
+  
+}
+
+.con-like .celebrate {
+  position: absolute;
+  animation: kfr-celebrate 0.5s;
+  animation-fill-mode: forwards;
+  display: none;
+}
+
+.con-like .poly {
+  stroke: var(--red);
+  fill: var(--red);
+}
+
+.con-like .like:checked ~ .checkmark .filled {
+  stroke: var(--red);
+  fill: var(--red);
+  display: block
+}
+
+.con-like .like:checked ~ .checkmark .celebrate {
+  display: block
+}
+

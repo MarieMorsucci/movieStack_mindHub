@@ -28,14 +28,13 @@
             <img class=" w-[400px] object-fill" src="../assets/Moviestack_logotipo1.png" alt="logotipo">
         </div>
 
-
         <nav class=" w-2/5  flex flex-wrap gap-1 justify-around content-center p-4 text-white md:max-h-1/6">
             <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 "
                 href="./index.html">HOME</a>
-            <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 bg-indigo-400"
-                href="#">MOVIES</a>
             <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 "
-                href="./favorites.html">FAVS</a>
+                href="./movies.html">MOVIES</a>
+            <a class="px-4 py-2 bg-gray-200 text-black rounded-lg hover:scale-110 transition-transform ease-in-out duration-200 bg-indigo-400"
+                href="#">FAVS</a>
 
         </nav>
 
@@ -45,30 +44,15 @@
     <main class=" w-full flex flex-wrap bg-gray-200 ">
 
         <div class=" w-full">
-            <h1 class="exo-font h-[100px] text-center text-5xl font-bold bg-indigo-200 p-5 ">
-                MOVIES
+            <h1 class="exo-font h-[100px] w-full text-center text-4xl md:text-5xl font-bold bg-indigo-200 p-5 ">
+                FAVORITES MOVIES
             </h1>
         </div>
-        <div class="filtersMovies h-[50px] w-full bg-indigo-400 flex justify-around">
+     
 
-            <form class="w-full flex justify-around p-2">
-
-                <select id="selectedGenre" class="w-2/5" name="selectedGenre" autofocus="loadMessage" >
-                    <option selected disabled  value="">Choose a genre</option>
-                    <option value="">All</option>
-
-                </select>
-                <label class="w-2/5">
-                    <input  id="nameSearch" placeholder="Search per name.." class="h-[35px] w-4/5 p-2" type="text">
-                </label>
+        <div id="favoriteContent" class="flex flex-wrap justify-around gap-6 p-6 ">
 
 
-            </form>
-
-
-        </div>
-
-        <div id="movieContent" class="flex flex-wrap justify-around gap-6 p-6">
 
         </div>
 
@@ -84,12 +68,12 @@
     </footer>
 
 
-    
-    <script type="module" src="../js/data2.js"></script>
-   <!-- <script src="../js/movie.js"></script> -->
+
+    <script type="module" src="../js/favorites.js"></script>
+    <!-- <script src="../js/movie.js"></script> -->
 
     <!-- Este script esta ligado al script de funcionamiento del html -->
-    
+
 </body>
 
 </html>
